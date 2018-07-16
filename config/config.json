@@ -1,0 +1,15 @@
+{
+    "server": {
+        "port": 3600
+    },
+    "passport": {
+        "clientID": "480644845693218",
+        "clientSecret": "secret",
+        "callbackURL": "http://localhost:3000/auth/facebook/callback",
+    },
+    "dataBase": {
+        "name": "test",
+        "username": "root",
+        "password": "parola"
+    }
+}
