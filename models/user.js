@@ -49,5 +49,6 @@ const userOptions = {
 };
 
 module.exports = {
-    userOptions,
+  sequelize,
+  userOptions,
 }

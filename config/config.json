@@ -4,8 +4,8 @@
     },
     "passport": {
         "clientID": "480644845693218",
-        "clientSecret": "secret",
-        "callbackURL": "http://localhost:3000/auth/facebook/callback",
+        "clientSecret": "82791c42a7156897839399b2be88c838",
+        "callbackURL": "http://localhost:3600/auth/facebook/callback"
     },
     "dataBase": {
         "name": "test",
