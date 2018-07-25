@@ -9,11 +9,11 @@
   "author": "dohotaruv@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "1.17.1",
+    "body-parser": "1.18.3",
     "convict": "^4.3.2",
-    "cors": "2.8.3",
+    "cors": "2.8.4",
     "express": "4.15.2",
-    "jsonwebtoken": "7.3.0",
+    "jsonwebtoken": "8.3.0",
     "request": "^2.87.0",
     "request-promise-native": "^1.0.5"
   }
