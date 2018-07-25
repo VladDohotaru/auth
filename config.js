@@ -3,40 +3,49 @@
 const convict = require('convict');
 
 const config = convict({
-    server: {
-        port: {
+    SERVER: {
+        PORT: {
             format: "port",
             required: true,
             default: 8080
         },
     },
-    passport: {
-        clientID: {
+    FACEBOOK: {
+        FACEBOOK_APP_ID: {
             // format: String,
             required: true
         },
-        clientSecret: {
+        FACEBOOK_SECRET_KEY: {
             // format: String,
             required: true
         },
-        callbackURL: {
-            // format: String,
-            required: true
+        FACEBOOK_API: {
+            require: true
         },
+        FACEBOOK_VERSION: {
+            require: true
+        },
+        FACEBOOK_FIELDS: {
+            require: true
+        }
     },
-    dataBase: {
-        name: {
+    JWT: {
+        TOKEN_SECRET_KEY: {
             // format: String,
             required: true,
         },
-        username: {
+        TOKEN_EXPIRATION: {
             // format: String,
             required: true,
         },
-        password: {
+        TOKEN_ISSUER: {
             // format: String,
             required: true,
         },
+        TOKEN_ALGORITHM: {
+            // format: String,
+            required: true,
+        }
     },
 });
 config.loadFile(['./config/config.json']);

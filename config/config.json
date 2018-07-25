@@ -1,15 +1,19 @@
 {
-    "server": {
-        "port": 3600
+    "SERVER": {
+        "PORT": 3000,
+        "CORS_DOMAINS": null
     },
-    "passport": {
-        "clientID": "480644845693218",
-        "clientSecret": "82791c42a7156897839399b2be88c838",
-        "callbackURL": "http://localhost:3600/auth/facebook/callback"
+    "FACEBOOK": {
+        "FACEBOOK_APP_ID": "480644845693218",
+        "FACEBOOK_SECRET_KEY": "82791c42a7156897839399b2be88c838",
+        "FACEBOOK_API": "https://graph.facebook.com",
+        "FACEBOOK_VERSION": "v3.0",
+        "FACEBOOK_FIELDS": "email,name,locale"
     },
-    "dataBase": {
-        "name": "test",
-        "username": "root",
-        "password": "parola"
+    "JWT": {
+        "TOKEN_SECRET_KEY": "secret",
+        "TOKEN_EXPIRATION": 3600,
+        "TOKEN_ISSUER": "localhost",
+        "TOKEN_ALGORITHM": "HS512"
     }
 }
