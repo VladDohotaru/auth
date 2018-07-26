@@ -31,6 +31,13 @@ async function findProfile(socialToken) {
   };
 }
 
+// (async () => {
+//   const getCookie = await transform(myRequest.getDefaultRequestObject({
+//     url: 'http://localhost:3000/secure?jwt=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJmYWNlYm9va0lkIjoiODU3NTAxNTk0NDU4ODk2IiwibmFtZSI6IlZsYWQgRG9ob3RhcnUiLCJpYXQiOjE1MzI1ODgyMTcsImV4cCI6MTUzMjU5MTgxNywiaXNzIjoibG9jYWxob3N0In0.cQ5vUJXBB4TfQkB4FkQPFJ9MYm6nvp75wjPzgRmBHHj3nFct5qtctmOnCMZcX5otPO63OujPyIg3XKBxQDzpMA',
+//   }));
+//   const fullResponse = await myRequest.makeRequest(getCookie);
+//   console.log(fullResponse)
+// })();
 
 
 function parseAccessToken(facebookResponse) {
