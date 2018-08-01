@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine:3.7
 
 RUN apk add --update nodejs
 
@@ -9,6 +9,6 @@ ADD package.json /usr/src/app/
 RUN npm install
 ADD . /usr/src/app
 
-EXPOSE 3000
+EXPOSE 3000:3000
 
 CMD [ "npm", "start" ]
